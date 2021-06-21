@@ -1,0 +1,8 @@
+node{
+  stage('Stage SCM Checkout'){
+    git'https://github.com/ithineni/eclipse'
+  }
+  stage('Compile-Package'){
+    sh 'mvn package'
+  }
+}
